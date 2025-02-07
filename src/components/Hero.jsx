@@ -1,12 +1,12 @@
 import React from 'react'
-import Hero from '../assets/Hero.png'
+import Hero from '../assets/hero.png'
 import facebook from '../assets/facebook.png'
-import githubLogo from '../assets/Github.png'
+import githubLogo from '../assets/github.png'
 import instagram from '../assets/instagram.png'
 import linkedin from '../assets/linkedin.png'
-import React from '../assets/React.png'
-import Redux from '../assets/Redux.png'
-import Tailwind from '../assets/Tailwind.png'
+import reactLogo from '../assets/reactLogo.png'
+import reduxLogo from '../assets/reduxLogo.png'
+import Tailwind from '../assets/tailwind.png'
 
 const Hero = () => {
   return (
@@ -21,8 +21,8 @@ const Hero = () => {
             </div>
             <div className='md:w-1/2 relative flex justify-center items-end'>
                  <img src={Hero} alt="" className='lg:h-[90vh] h-96' />
-                 <img src={React} alt="" className='absolute w-10 top-36 left-0 rounded-full md:hidden'/>
-                 <img src={Redux} alt="" className='absolute w-10 top-0 right-5 md:hidden'/>
+                 <img src={reactLogo} alt="" className='absolute w-10 top-36 left-0 rounded-full md:hidden'/>
+                 <img src={reduxLogo} alt="" className='absolute w-10 top-0 right-5 md:hidden'/>
                  <img src={Tailwind} alt="" className='absolute w-10 rounded-full right-0 bottom-36 md:hidden'/>
             </div>
         </div>

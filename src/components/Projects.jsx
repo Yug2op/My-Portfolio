@@ -1,7 +1,7 @@
 import React from 'react'
 import weather from '../assets/weather.png'
-import ImageSearch from '../assets/ImageSearch.png'
-import QRGenerator from '../assets/QRGenerator.png'
+import ImageSearch from '../assets/imageSearch.png'
+import QRGenerator from '../assets/qrGenerator.png'
 import Cards from './Cards'
 
 
