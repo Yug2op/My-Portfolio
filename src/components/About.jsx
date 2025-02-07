@@ -1,7 +1,7 @@
 import React from 'react'
 import MernStack from '../assets/mernstack.png'
 import Html from '../assets/Html.png'
-import Css from '../assets/Css.png'
+import CSS from '../assets/CSS.png'
 import Javascript from '../assets/JS.png'
 import ReactLogo from '../assets/React.png'
 import ReduxLogo from '../assets/Redux.png'
@@ -41,7 +41,7 @@ const About = () => {
                                         <span className='font-semibold'>HTML</span>
                                     </div>
                                     <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                        <img src={Css} alt="" className='w-8' />
+                                        <img src={CSS} alt="" className='w-8' />
                                         <span className='font-semibold'>CSS</span>
                                     </div>
                                     <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
