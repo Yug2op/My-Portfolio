@@ -1,13 +1,12 @@
 import React from 'react'
 import hero from '../assets/Hero.png'
 import facebook from '../assets/facebook.png'
-import github from '../assets/github.png'
+import Github from '../assets/Github.png'
 import instagram from '../assets/instagram.png'
 import linkedin from '../assets/linkedin.png'
 import reactLogo from '../assets/React.png'
 import reduxLogo from '../assets/Redux.png'
 import tailwind from '../assets/Tailwind Css.png'
-// import GOOD_IMG_2 from '../assets/GOOD_IMG_2.png'
 
 const Hero = () => {
   return (
@@ -36,7 +35,7 @@ const Hero = () => {
           <img src={instagram} alt="" className='w-20'/>
           </a>
         <a href="https://github.com/Yug2op" target='_blank'>
-          <img src={github} alt="" className='w-16 mx-2 bg-red-500 rounded-xl'/>
+          <img src={Github} alt="" className='w-16 mx-2 bg-red-500 rounded-xl'/>
           </a>
         <a href="https://www.linkedin.com/in/yugank-tripathi-830b7a23a/" target='_blank'>
           <img src={linkedin} alt="" className='w-20'/>
