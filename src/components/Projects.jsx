@@ -2,6 +2,7 @@ import React from 'react'
 import weather from '../assets/weather.png'
 import ImageSearch from '../assets/imageSearch.png'
 import QRGenerator from '../assets/qrGenerator.png'
+import myPortfolio from '../assets/myPortfolio.png'
 import Cards from './Cards'
 
 
@@ -11,9 +12,9 @@ const Projects = () => {
         {
           title: 'Portfolio',
           desc: 'Working on it to make it more responsive and interactive. It is a simple portfolio website with a dark theme.',
-          image: "",
-          live: "#",
-          github: "#"
+          image: myPortfolio,
+          live: "https://my-portfolio-git-main-yugank-tripathis-projects.vercel.app/",
+          github: "https://github.com/Yug2op/My-Portfolio"
         },
         {
           title: 'Image-Search',
