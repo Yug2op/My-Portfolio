@@ -3,8 +3,8 @@ import mernstack from '../assets/mernstack.png'
 import Html from '../assets/html.png'
 import CSS from '../assets/css.png'
 import JS from '../assets/javaScript.png'
-import React from '../assets/reactLogo.png'
-import Redux from '../assets/reduxLogo.png'
+import ReactLogo from '../assets/reactLogo.png'
+import ReduxLogo from '../assets/reduxLogo.png'
 import Tailwind from '../assets/tailwind.png'
 import Bootstrap from '../assets/bootstrap.png'
 import NodeLogo from '../assets/nodeLogo.png'
@@ -49,11 +49,11 @@ const About = () => {
                                         <span className='font-semibold'>Javascript</span>
                                     </div>
                                     <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                        <img src={React} alt="" className='w-8 rounded-full' />
+                                        <img src={ReactLogo} alt="" className='w-8 rounded-full' />
                                         <span className='font-semibold'>React</span>
                                     </div>
                                     <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                        <img src={Redux} alt="" className='w-8' />
+                                        <img src={ReduxLogo} alt="" className='w-8' />
                                         <span className='font-semibold'>Redux</span>
                                     </div>
                                     <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
