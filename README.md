@@ -1,8 +1,25 @@
-# React + Vite
+# 🌟 My Portfolio  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! 🚀 This project showcases my skills, projects, and experience with an interactive and visually appealing design. Built using **React**, it features animations, particle effects, and smooth transitions for an engaging user experience.  
 
-Currently, two official plugins are available:
+## ✨ Features  
+- 🎭 **Dynamic Animations** – Powered by **Framer Motion** and **Lottie React**  
+- 🌌 **Interactive Particle Effects** – Implemented using **tsparticles**  
+- 🔄 **Smooth Page Transitions** – Handled by **React Router**  
+- ⚡ **Lazy Loading Optimization** – Enhances performance with **React Lazyload**  
+- 📩 **Email Contact Form** – Integrated with **EmailJS** for seamless communication  
+- 🔍 **SEO Optimization** – Managed with **React Helmet**  
+- 🎨 **Responsive & Modern UI** – Featuring **Swiper.js** for sleek carousels  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Technologies Used  
+- **React 18** ⚛️  
+- **Framer Motion** – For smooth animations  
+- **Lottie React** – For high-quality animations  
+- **tsparticles** – For interactive particle effects  
+- **React Router** – For seamless navigation  
+- **Swiper.js** – For responsive sliders  
+
+## 🚀 Installation & Setup  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/your-Yug2op/my-portfolio.git
