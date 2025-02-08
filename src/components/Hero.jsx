@@ -1,12 +1,12 @@
 import React from 'react'
-import HeroLogo from '../assets/hero.png'
-import facebook from '../assets/facebook.png'
-import githubLogo from '../assets/github.png'
-import instagram from '../assets/instagram.png'
-import linkedin from '../assets/linkedin.png'
-import reactLogo from '../assets/reactLogo.png'
-import reduxLogo from '../assets/reduxLogo.png'
-import Tailwind from '../assets/tailwind.png'
+import HeroLogo from '../../public/hero.png'
+import facebook from '../../public/facebook.png'
+import githubLogo from '../../public/github.png'
+import instagram from '../../public/instagram.png'
+import linkedin from '../../public/linkedin.png'
+import reactLogo from '../../public/reactLogo.png'
+import reduxLogo from '../../public/reduxLogo.png'
+import Tailwind from '../../public/tailwind.png'
 
 const Hero = () => {
   return (

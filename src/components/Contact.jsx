@@ -1,9 +1,9 @@
 import React, { useRef } from 'react'
-import facebook from '../assets/facebook.png'
-import instagram from '../assets/instagram.png'
-import linkedin from '../assets/linkedin.png'
+import facebook from '../../public/facebook.png'
+import instagram from '../../public/instagram.png'
+import linkedin from '../../public/linkedin.png'
 import Lottie from 'lottie-react'
-import contact from '../assets/Contact.json'
+import contact from '../../public/Contact.json'
 import emailjs from '@emailjs/browser';
 import conf from '../ENV_variables/conf'
 import { publicKey } from '../ENV_variables/conf'

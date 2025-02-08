@@ -1,8 +1,8 @@
 import React from 'react'
-import weather from '../assets/weather.png'
-import ImageSearch from '../assets/imageSearch.png'
-import QRGenerator from '../assets/qrGenerator.png'
-import myPortfolio from '../assets/myPortfolio.png'
+import weather from '../../public/weather.png'
+import ImageSearch from '../../public/imageSearch.png'
+import QRGenerator from '../../public/qrGenerator.png'
+import myPortfolio from '../../public/myPortfolio.png'
 import Cards from './Cards'
 
 
