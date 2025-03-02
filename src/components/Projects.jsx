@@ -3,6 +3,7 @@ import weather from '../../public/weather.png'
 import ImageSearch from '../../public/imageSearch.png'
 import QRGenerator from '../../public/qrGenerator.png'
 import myPortfolio from '../../public/myPortfolio.png'
+import pasteHub from '../../public/pasteHub.png'
 import Cards from './Cards'
 
 
@@ -24,11 +25,11 @@ const Projects = () => {
           github: "https://github.com/Yug2op/Image-Search-Engine"
         },
         {
-          title: 'Blog Website',
-          desc: 'A simple blog website where you can read and write blogs. It is a simple website.',
-          image: "",
-          live: "#",
-          github: "#"
+          title: 'Paste-Hub',
+          desc: 'A minimalistic paste website for effortlessly writing and reading your daily notes. Simple, fast, and convenient.',
+          image: pasteHub,
+          live: "https://paste-hub-yugank-tripathis-projects.vercel.app/",
+          github: "https://github.com/Yug2op/PasteHub"
         },
         {
           title: 'Weather Website',
