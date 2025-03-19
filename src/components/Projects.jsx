@@ -3,6 +3,7 @@ import weather from '../../public/weather.png'
 import ImageSearch from '../../public/imageSearch.png'
 import QRGenerator from '../../public/qrGenerator.png'
 import myPortfolio from '../../public/myPortfolio.png'
+import BlogApp from '../../public/blogApp.png'
 import pasteHub from '../../public/pasteHub.png'
 import Cards from './Cards'
 
@@ -45,6 +46,13 @@ const Projects = () => {
           live: "https://qr-generator-murex-two.vercel.app",
           github: "https://github.com/Yug2op/QR-Generator"
         },
+        {
+          title: 'Blog-App',
+          desc: 'Blog App is a simple and efficient blogging platform built using React and Appwrite. It allows users to create, edit, delete, and manage blog posts with a clean and responsive UI.',
+          image: BlogApp,
+          live: "https://blog-app-six-orpin.vercel.app/",
+          github: "https://github.com/Yug2op/Blog-App"
+        }
       ];
 
   return (
