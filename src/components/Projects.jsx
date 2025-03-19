@@ -3,7 +3,7 @@ import weather from '../../public/weather.png'
 import ImageSearch from '../../public/imageSearch.png'
 import QRGenerator from '../../public/qrGenerator.png'
 import myPortfolio from '../../public/myPortfolio.png'
-import BlogApp from '../../public/blogApp.png'
+import BlogApp from '../../public/BlogApp.png'
 import pasteHub from '../../public/pasteHub.png'
 import Cards from './Cards'
 
