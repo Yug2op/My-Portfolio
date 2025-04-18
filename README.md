@@ -18,8 +18,3 @@ Welcome to my personal portfolio! 🚀 This project showcases my skills, project
 - **tsparticles** – For interactive particle effects  
 - **React Router** – For seamless navigation  
 - **Swiper.js** – For responsive sliders  
-
-## 🚀 Installation & Setup  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/your-Yug2op/my-portfolio.git
