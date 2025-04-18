@@ -5,6 +5,7 @@ import QRGenerator from '../../public/qrGenerator.png'
 import myPortfolio from '../../public/myPortfolio.png'
 import BlogApp from '../../public/BlogApp.png'
 import pasteHub from '../../public/pasteHub.png'
+import VideoSphere from '../../public/VideoSphere.png'
 import Cards from './Cards'
 
 
@@ -52,6 +53,13 @@ const Projects = () => {
           image: BlogApp,
           live: "https://blog-app-six-orpin.vercel.app/",
           github: "https://github.com/Yug2op/Blog-App"
+        },
+        {
+          title: 'VideoSphere-One sphere, infinite videos',
+          desc: 'VidioSphere is a modern video streaming platform built using the MERN stack (MongoDB, Express.js, React, Node.js). It provides users with a seamless experience to upload, stream, like, comment, and subscribe to channels, tweet, similar to popular platforms like YouTube.',
+          image: VideoSphere,
+          live: "https://vidio-sphere-app.vercel.app/",
+          github: "https://github.com/Yug2op/VidioSphere-App"
         }
       ];
 
