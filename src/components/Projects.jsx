@@ -51,7 +51,7 @@ const Projects = () => {
           title: 'Blog-App',
           desc: 'Blog App is a simple and efficient blogging platform built using React and Appwrite. It allows users to create, edit, delete, and manage blog posts with a clean and responsive UI.',
           image: BlogApp,
-          live: "https://blog-app-six-orpin.vercel.app/",
+          live: "https://blog-app-three-omega-33.vercel.app/",
           github: "https://github.com/Yug2op/Blog-App"
         },
         {
