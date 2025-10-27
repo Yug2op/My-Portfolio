@@ -7,6 +7,7 @@ import BlogApp from '../../public/BlogApp.png'
 import pasteHub from '../../public/pasteHub.png'
 import VideoSphere from '../../public/VideoSphere.png'
 import SkillExchange from '../../public/SkillExchange.png'
+import SayIt from '../../public/SayIt.png'
 import Cards from './Cards'
 
 
@@ -68,6 +69,13 @@ const Projects = () => {
       image: SkillExchange,
       live: "https://skill-exchange-mu.vercel.app/",
       github: "https://github.com/Yug2op/SkillExchange"
+    },
+    {
+      title: 'SayIt - Anonymous message board',
+      desc: 'SayIt – A modern anonymous message wall where users can freely post short, positive messages that instantly appear on the homepage. Built with Node.js, Express, React, and MongoDB, featuring smart content moderation and a sleek, dark pink-black aesthetic.',
+      image: SayIt,
+      live: "https://say-it-seven.vercel.app/",
+      github: "https://github.com/Yug2op/SayIt"
     }
   ];
 
