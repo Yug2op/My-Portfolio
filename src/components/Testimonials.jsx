@@ -47,6 +47,13 @@ const Testimonials = () => {
             rating: 5,
             text: "I really appreciate his dedication and attention to detail. He turns ideas into working projects efficiently and professionally."
         },
+        {
+            id: 4,
+            name: "Disha Bhojwani",
+            designation: "Dietician",
+            rating: 5,
+            text: "Hardworking and adaptable, delivered a smooth, high-quality website with a perfect color palette. Great experience highly recommended for future projects!"
+        },
         
     ];
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import weather from '../../public/weather.png'
+import SehatByDisha from '../../public/SehatByDisha.png'
 import ImageSearch from '../../public/imageSearch.png'
 import QRGenerator from '../../public/qrGenerator.png'
 import myPortfolio from '../../public/myPortfolio.png'
@@ -14,6 +15,13 @@ import Cards from './Cards'
 const Projects = () => {
 
   const projectJson = [
+    {
+      title: 'SehatByDisha',
+      desc: 'A comprehensive web platform for Disha to manage her client consultations, meal planning.',
+      image: SehatByDisha,
+      live: "https://sehatbydisha.com/",
+      github: "https://github.com/placidconsultations/SehatBYDisha"
+    },
     {
       title: 'Portfolio',
       desc: 'Working on it to make it more responsive and interactive. It is a simple portfolio website with a dark theme.',
@@ -58,13 +66,13 @@ const Projects = () => {
     },
     {
       title: 'VideoSphere-One sphere, infinite videos',
-      desc: 'VidioSphere is a modern video streaming platform built using the MERN stack (MongoDB, Express.js, React, Node.js). It provides users with a seamless experience to upload, stream, like, comment, and subscribe to channels, tweet, similar to popular platforms like YouTube.',
+      desc: 'VidioSphere is a modern video streaming platform built using the MERN stack. It provides users with a seamless experience to upload, stream, like, comment, and subscribe to channels, tweet.',
       image: VideoSphere,
       live: "https://vidio-sphere-app.vercel.app/",
       github: "https://github.com/Yug2op/VidioSphere-App"
     },
     {
-      title: 'SkillExchange - Connect • Learn • Grow Together',
+      title: 'SkillExchange',
       desc: 'SkillExchange – A comprehensive skill exchange platform that connects individuals seeking to learn and teach various skills. Built with modern web technologies, real-time chat, and intelligent user matching for finding the best learning partners.',
       image: SkillExchange,
       live: "https://skill-exchange-mu.vercel.app/",
