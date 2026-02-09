@@ -1,6 +1,6 @@
 import React from 'react'
 import weather from '../../public/weather.png'
-import SehatByDisha from '../../public/SehatByDisha.png'
+import SehatByDisha from '../../public/Disha.png'
 import ImageSearch from '../../public/imageSearch.png'
 import QRGenerator from '../../public/qrGenerator.png'
 import myPortfolio from '../../public/myPortfolio.png'
