@@ -79,7 +79,7 @@ const Contact = () => {
                 <label htmlFor='name' className='text-[12px] font-mono tracking-widest uppercase text-gray-400'>Name</label>
                 <input
                   type='text' id='name' name='user_name' placeholder='Full Name' required
-                  className='bg-gray-800/50 border border-gray-600 focus:border-red-500 focus:ring-1 focus:ring-red-500/50 focus:outline-none text-white rounded-xl px-4 py-3 transition-all'
+                  className='bg-gray-800/50 border border-gray-600 focus:border-red-500 focus:ring-1 focus:ring-red-500/50 focus:outline-none text-white rounded-xl px-4 py-2.5 transition-all'
                 />
               </div>
 
@@ -87,7 +87,7 @@ const Contact = () => {
                 <label htmlFor='email' className='text-[12px] font-mono tracking-widest uppercase text-gray-400'>Email</label>
                 <input
                   type='email' id='email' name='user_email' placeholder='Email Address' required
-                  className='bg-gray-800/50 border border-gray-600 focus:border-red-500 focus:ring-1 focus:ring-red-500/50 focus:outline-none text-white rounded-xl px-4 py-3 transition-all'
+                  className='bg-gray-800/50 border border-gray-600 focus:border-red-500 focus:ring-1 focus:ring-red-500/50 focus:outline-none text-white rounded-xl px-4 py-2.5 transition-all'
                 />
               </div>
 
@@ -95,7 +95,7 @@ const Contact = () => {
                 <label htmlFor='message' className='text-[12px] font-mono tracking-widest uppercase text-gray-400'>Message</label>
                 <textarea
                   id='message' name='message' placeholder='How can I help you?' rows={4} required
-                  className='bg-gray-800/50 border border-gray-600 focus:border-red-500 focus:ring-1 focus:ring-red-500/50 focus:outline-none text-white rounded-xl px-4 py-3 transition-all resize-none'
+                  className='bg-gray-800/50 border border-gray-600 focus:border-red-500 focus:ring-1 focus:ring-red-500/50 focus:outline-none text-white rounded-xl px-4 py-2.5 transition-all resize-none'
                 />
               </div>
 
