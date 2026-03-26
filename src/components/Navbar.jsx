@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
 const Navbar = () => {
@@ -12,52 +12,68 @@ const Navbar = () => {
   ]
 
   return (
-    <header className='sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur px-4 lg:px-0'>
-      <div className='max-w-7xl mx-auto flex h-14 items-center justify-between'>
+    <header className='sticky top-0 z-50 w-full bg-gray-700/90 backdrop-blur-md border-b border-gray-600/50'>
+      <div className='max-w-6xl mx-auto px-4 flex h-14 items-center justify-between'>
+
         {/* Logo */}
-        <a href="/" className='flex items-center space-x-2'>
-          <h5 className='text-xl font-bold text-foreground/80'>
-            yugank.<span className='text-red-500'>tripathi/</span>
-          </h5>
+        <a href='/' className='flex items-center'>
+          <span className='text-base font-bold text-white'>
+            yugank<span className='text-red-500'>.</span>
+          </span>
+          <span className='text-base font-bold text-red-500'>tripathi</span>
+          <span className='text-base font-bold text-gray-500'>/</span>
         </a>
 
-        {/* Desktop Menu */}
-        <nav className='hidden md:flex items-center space-x-6 text-lg font-medium'>
-          {navLinks.map((link, index) => (
+        {/* Desktop nav */}
+        <nav className='hidden md:flex items-center gap-1'>
+          {navLinks.map((link) => (
             <a
-              key={index}
+              key={link.name}
               href={link.href}
-              className='transition-colors hover:text-foreground/80 text-foreground/60'
+              className='text-xs font-medium text-gray-400 hover:text-white px-3 py-1.5 rounded-full hover:bg-gray-600/50 transition-all duration-200'
             >
               {link.name}
             </a>
           ))}
+          {/* <a
+            href='#contact'
+            className='ml-2 text-xs font-semibold tracking-wide uppercase bg-red-500 hover:bg-red-600 text-white px-4 py-1.5 rounded-full transition-colors duration-200'
+          >
+            Hire Me
+          </a> */}
         </nav>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile menu button */}
         <button
-          className='inline-flex items-center justify-center rounded-md md:hidden'
+          className='md:hidden text-gray-400 hover:text-white transition-colors'
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label='Toggle menu'
         >
-          <span className='sr-only'>Open main menu</span>
-          {mobileMenuOpen ? <X className='h-6 w-6' /> : <Menu className='h-6 w-6' />}
+          {mobileMenuOpen ? <X className='h-5 w-5' /> : <Menu className='h-5 w-5' />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className='md:hidden'>
-          <div className='space-y-1 px-2 pb-3 pt-2'>
-            {navLinks.map((link, index) => (
+        <div className='md:hidden border-t border-gray-600/50 bg-gray-700/95 backdrop-blur-md'>
+          <div className='max-w-4xl mx-auto px-4 py-3 flex flex-col gap-1'>
+            {navLinks.map((link) => (
               <a
-                key={index}
+                key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition'
+                className='text-sm font-medium text-gray-400 hover:text-white hover:bg-gray-600/50 px-3 py-2 rounded-lg transition-all duration-200'
               >
                 {link.name}
               </a>
             ))}
+            <a
+              href='#contact'
+              onClick={() => setMobileMenuOpen(false)}
+              className='mt-1 text-xs font-semibold tracking-wide uppercase text-center bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-full transition-colors duration-200'
+            >
+              Hire Me
+            </a>
           </div>
         </div>
       )}

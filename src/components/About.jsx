@@ -1,91 +1,109 @@
 import React from 'react'
 import mernstack from '../../public/mernstack.png'
-import Html from '../../public/html.png'
-import CSS from '../../public/css.png'
 import JS from '../../public/javaScript.png'
 import ReactLogo from '../../public/reactLogo.png'
 import ReduxLogo from '../../public/reduxLogo.png'
 import Tailwind from '../../public/tailwind.png'
-import Bootstrap from '../../public/bootstrap.png'
 import NodeLogo from '../../public/nodeLogo.png'
 import mongodb from '../../public/mongodb.svg'
 import Express from '../../public/express.png'
-import NextJs from '../../public/nextJs.png'
-const About = () => {
+import PySpark from '../../public/pyspark.jfif'
+import Databricks from '../../public/Databricks.png'
 
+const skills = [
+    { img: Databricks, label: 'Databricks', wide: true },
+    { img: PySpark, label: 'PySpark' },
+    { img: JS, label: 'JavaScript' },
+    { img: ReactLogo, label: 'React', rounded: true },
+    { img: ReduxLogo, label: 'Redux' },
+    { img: Tailwind, label: 'Tailwind', rounded: true },
+    { img: NodeLogo, label: 'Node.js' },
+    { img: mongodb, label: 'MongoDB' },
+    { img: Express, label: 'Express.js' },
+]
+
+const About = () => {
     return (
         <div className='relative' id='about'>
-            <div className='bg-gray-100 py-12'>
-                <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-                    <div className='text-center'>
-                        <h2 className='text-base text-red-600 font-semibold tracking-wide uppercase'>About Me</h2>
-                        <p className='mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl'>Hi, I'm Yugank Tripathi</p>
-                        <p className='mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto'>
-                            A Fresher in the world of web development, I work in MERN stack.
+            <div className='bg-gray-700 py-16 px-4'>
+                <div className='max-w-6xl mx-auto'>
+
+                    {/* Section header — matches Projects style */}
+                    <div className='mb-12'>
+                        <p className='text-[12px] font-mono tracking-[0.25em] uppercase text-red-500 mb-2'>
+                            Who I Am
                         </p>
+                        <h2 className='text-3xl font-bold text-white leading-none'>
+                            About
+                            <span className='text-red-500'>.</span>
+                        </h2>
                     </div>
-                    <div className='mt-10'>
-                        <div className='grid grid-cols-1 gap-12 lg:grid-cols-2'>
+
+                    {/* Main grid */}
+                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
+
+                        {/* Left — Journey card */}
+                        <div className='bg-gray-800/60 border border-gray-700 rounded-2xl p-6 flex flex-col gap-5 hover:border-red-500/40 transition-colors duration-300'>
                             <div>
-                                <h3 className='text-2xl font-semibold text-gray-900'>My Journey</h3>
-                                <p className='mt-4 text-lg text-gray-600'>
-                                    I started my journey in web development with a passion for creating intuitive and scalable applications. With proficiency in the MERN stack (MongoDB, Express.js, React, and Node.js), I have built Projects such as a Blog Website , a Paste App And some small Projects. My projects demonstrate my ability to integrate poweful backend solutions with sleek, user-friendly frontend designs.
+                                <p className='text-[9px] font-mono tracking-[0.2em] uppercase text-red-500/70 mb-2'>
+                                    My Journey
                                 </p>
-                                <img src={mernstack} alt="" className='p-2 rounded-lg w-52 mt-4' />
+                                <h3 className='text-xl font-bold text-white'>
+                                    Hi, I'm Yugank Tripathi
+                                </h3>
+                                <p className='text-xs text-gray-400 mt-0.5'>
+                                    A Fresher in the world of Tech.
+                                </p>
                             </div>
-                            <div className='border border-red-200 rounded-lg md:p-7 py-7  flex flex-col gap-8 items-center shadow-lg shadow-red-300'>
-                                <h3 className='text-2xl font-semibold text-red-600'>Skills</h3>
-                                <div className='flex items-center justify-center flex-wrap gap-3'>
-                                    <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                        <img src={Html} alt="" className='w-10' />
-                                        <span className='font-semibold'>HTML</span>
-                                    </div>
-                                    <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                        <img src={CSS} alt="" className='w-8' />
-                                        <span className='font-semibold'>CSS</span>
-                                    </div>
-                                    <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                        <img src={JS} alt="" className='w-10' />
-                                        <span className='font-semibold'>Javascript</span>
-                                    </div>
-                                    <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                        <img src={ReactLogo} alt="" className='w-8 rounded-full' />
-                                        <span className='font-semibold'>React</span>
-                                    </div>
-                                    <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                        <img src={ReduxLogo} alt="" className='w-8' />
-                                        <span className='font-semibold'>Redux</span>
-                                    </div>
-                                    <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                        <img src={Tailwind} alt="" className='w-8 rounded-full' />
-                                        <span className='font-semibold'>Tailwind Css</span>
-                                    </div>
-                                    <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                        <img src={Bootstrap} alt="" className='w-10' />
-                                        <span className='font-semibold'>Bootstrap</span>
-                                    </div>
-                                    <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                        <img src={NodeLogo} alt="" className='w-10' />
-                                        <span className='font-semibold'>Node Js</span>
-                                    </div>
-                                    <div className='border border-red-300 flex items-center  w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                        <img src={mongodb} alt="" className='w-10' />
-                                        <span className='font-semibold'>Mongodb</span>
-                                    </div>
-                                    <div className='border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                        <img src={Express} alt="" className='w-10' />
-                                        <span className='font-semibold'>Express Js</span>
-                                    </div>
-                                    
-                                </div>
+
+                            <p className='text-sm text-gray-400 leading-relaxed'>
+                                I started my journey in web development with a passion for creating intuitive and scalable applications. With proficiency in the MERN stack, I've built projects ranging from a Blog Website and Paste App to full-scale streaming platforms — integrating powerful backends with sleek, user-friendly frontends.
+                            </p>
+
+                            {/* MERN badge */}
+                            <div className='mt-auto pt-4 border-t border-gray-700 flex items-center gap-3'>
+                                <img src={mernstack} alt='MERN Stack' className='h-8 object-contain opacity-80' />
+                                <span className='text-[12px] text-gray-500 font-mono tracking-wider'>Core Stack</span>
                             </div>
                         </div>
-                    </div>
-                    <div className='mt-12'>
-                        <h3 className='text-2xl font-semibold text-gray-900'>More About Me</h3>
-                        <p className='mt-4 text-lg text-gray-600'>
-                            Apart from coding, I am passionate about learning new technologies and keeping myself up-to-date with the latest trends in web development.
-                        </p>
+
+                        {/* Right — Skills card */}
+                        <div className='bg-gray-800/60 border border-gray-700 rounded-2xl p-6 flex flex-col gap-5 hover:border-red-500/40 transition-colors duration-300'>
+                            <div>
+                                <p className='text-[9px] font-mono tracking-[0.2em] uppercase text-red-500/70 mb-2'>
+                                    Tech Stack
+                                </p>
+                                <h3 className='text-xl font-bold text-white'>
+                                    Skills
+                                </h3>
+                            </div>
+
+                            <div className='flex flex-wrap gap-2'>
+                                {skills.map((skill, i) => (
+                                    <div
+                                        key={i}
+                                        className='flex items-center gap-2 bg-gray-700/60 border border-gray-600/60 hover:border-red-500/40 hover:bg-gray-700 transition-all duration-200 rounded-xl px-3 py-2 cursor-default'
+                                    >
+                                        <img
+                                            src={skill.img}
+                                            alt={skill.label}
+                                            className={`h-5 object-contain ${skill.rounded ? 'rounded-full' : ''} ${skill.wide ? 'w-14' : 'w-5'}`}
+                                        />
+                                        <span className='text-xs font-medium text-gray-300'>
+                                            {skill.label}
+                                        </span>
+                                    </div>
+                                ))}
+                            </div>
+
+                            {/* Skill count */}
+                            <div className='mt-auto pt-4 border-t border-gray-700'>
+                                <p className='text-[12px] font-mono text-gray-500'>
+                                    <span className='text-red-400'>{skills.length}</span> technologies &amp; counting
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

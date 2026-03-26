@@ -1,34 +1,87 @@
 import React from 'react'
-import Github from '../../public/github.png'
 
-const Cards = ({ item }) => {
+const Cards = ({ item, index }) => {
     return (
-        <div className='border border-red-500 rounded-lg w-[350px] lg:w-[400px] bg-red-50 shadow-md hover:shadow-red-400 transition-shadow duration-300'>
-            <img src={item.image} alt={`${item.title} screenshot`} className='rounded-lg aspect-[4/3] object-cover' />
-            <div className='p-4'>
-                <h1 className='font-semibold text-xl mb-2'>{item.title}</h1>
-                <p>{item.desc}</p>
-                <div className='flex gap-3 mt-4'>
-                    <a 
-                        href={item.live} 
-                        target='_blank' 
-                        rel="noopener noreferrer"
-                        className='bg-red-500 text-white px-3 py-2 rounded-md hover:bg-red-600 transition-colors'
+        <a
+            href={item.live || item.github}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='group relative flex flex-col gap-3 bg-gray-800/60 border border-gray-700 rounded-2xl p-5 hover:border-red-500/60 hover:bg-gray-800 transition-all duration-300 cursor-pointer overflow-hidden'
+        >
+            {/* Subtle red glow on hover */}
+            <div className='absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-2xl'
+                style={{ background: 'radial-gradient(ellipse at top left, rgba(239,68,68,0.06) 0%, transparent 70%)' }} />
+
+            {/* Top row: index + tags + links */}
+            <div className='flex items-start justify-between gap-2'>
+                <div className='flex items-center gap-3'>
+                    {/* Index number */}
+                    <span className='font-mono text-xs font-bold text-red-500/70 select-none'>
+                        {String(index + 1).padStart(2, '0')}
+                    </span>
+                    {/* Tags */}
+                    {item.tags && (
+                        <div className='flex flex-wrap gap-1.5'>
+                            {item.tags.map((tag, i) => (
+                                <span
+                                    key={i}
+                                    className='text-[9px] font-semibold tracking-widest uppercase text-white bg-red-500/20 border border-gray-600/50 px-2 py-0.5 rounded-full'
+                                >
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
+                    )}
+                </div>
+
+                {/* Action links */}
+                <div className='flex items-center gap-3 flex-shrink-0'>
+                    {item?.live && (
+                        <a
+                            href={item.live}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            onClick={e => e.stopPropagation()}
+                            className='text-[12px] font-semibold tracking-wide uppercase text-red-400 hover:text-red-300 transition-colors flex items-center gap-1'
+                        >
+                            Live
+                        </a>
+                    )}
+                    <a
+                        href={item.github}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        onClick={e => e.stopPropagation()}
+                        className='text-gray-500 hover:text-gray-300 transition-colors'
+                        title='Source Code'
                     >
-                        Live Preview
-                    </a>
-                    <a 
-                        href={item.github} 
-                        target='_blank' 
-                        rel="noopener noreferrer"
-                        className='bg-black text-white px-3 py-2 rounded-md hover:bg-gray-900 transition-colors flex items-center gap-1'
-                    >
-                        <img src={Github} alt="GitHub" className='w-5 h-5' />
-                        Github Link
+                        <svg className='w-4 h-4' viewBox='0 0 24 24' fill='currentColor'>
+                            <path d='M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12' />
+                        </svg>
                     </a>
                 </div>
             </div>
-        </div>
+
+            {/* Main content: thumbnail + text */}
+            <div className='flex gap-4 items-start'>
+                <img
+                    src={item.image}
+                    alt={`${item.title} screenshot`}
+                    className='w-[100px] h-[70px] rounded-lg object-cover flex-shrink-0 border border-gray-700 group-hover:border-red-500/30 transition-colors duration-300'
+                />
+                <div className='flex flex-col gap-1 min-w-0'>
+                    <h2 className='font-bold text-base text-white leading-tight group-hover:text-red-400 transition-colors duration-200'>
+                        {item.title}
+                    </h2>
+                    <p className='text-xs text-gray-400 leading-relaxed line-clamp-2'>
+                        {item.desc}
+                    </p>
+                </div>
+            </div>
+
+            {/* Bottom red line reveal */}
+            <div className='absolute bottom-0 left-0 h-[2px] w-0 group-hover:w-full bg-red-500/50 transition-all duration-500 rounded-b-2xl' />
+        </a>
     )
 }
 
