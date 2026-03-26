@@ -7,7 +7,7 @@ import Tailwind from '../../public/tailwind.png'
 import NodeLogo from '../../public/nodeLogo.png'
 import mongodb from '../../public/mongodb.svg'
 import Express from '../../public/express.png'
-import PySpark from '../../public/pyspark.jfif'
+import PySpark from '../../public/PySpark.webp'
 import Databricks from '../../public/Databricks.png'
 
 const skills = [
