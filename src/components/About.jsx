@@ -9,7 +9,7 @@ import mongodb from '../../public/mongodb.svg'
 import Express from '../../public/express.png'
 import PySpark from '../../public/PySpark.webp'
 import Databricks from '../../public/Databricks.png'
-import Redis from '../../public/redis.png'
+import Redis from '../../public/Redis.png'
 
 const skills = [
     { img: Databricks, label: 'Databricks', wide: true },
