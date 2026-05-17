@@ -9,6 +9,7 @@ import mongodb from '../../public/mongodb.svg'
 import Express from '../../public/express.png'
 import PySpark from '../../public/PySpark.webp'
 import Databricks from '../../public/Databricks.png'
+import Redis from '../../public/redis.png'
 
 const skills = [
     { img: Databricks, label: 'Databricks', wide: true },
@@ -20,6 +21,7 @@ const skills = [
     { img: NodeLogo, label: 'Node.js' },
     { img: mongodb, label: 'MongoDB' },
     { img: Express, label: 'Express.js' },
+    { img: Redis, label: 'Redis' },
 ]
 
 const About = () => {
@@ -57,7 +59,7 @@ const About = () => {
                             </div>
 
                             <p className='text-sm text-gray-400 leading-relaxed'>
-                                I started my journey in web development with a passion for creating intuitive and scalable applications. With proficiency in the MERN stack, I've built projects ranging from a Blog Website and Paste App to full-scale streaming platforms — integrating powerful backends with sleek, user-friendly frontends.
+                                I started my journey in development with a passion for creating intuitive and scalable applications. With proficiency in the MERN stack, I've built projects ranging from a Blog Website and QR Code Generator to full-scale streaming platforms like VideoSphere, Repairium, and more — integrating powerful backends with sleek, user-friendly frontends.
                             </p>
 
                             {/* MERN badge */}

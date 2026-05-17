@@ -3,12 +3,12 @@ import weather from '../../public/weather.png'
 import SehatByDisha from '../../public/Disha.png'
 import ImageSearch from '../../public/imageSearch.png'
 import QRGenerator from '../../public/qrGenerator.png'
-import myPortfolio from '../../public/myPortfolio.png'
 import BlogApp from '../../public/BlogApp.png'
-import pasteHub from '../../public/pasteHub.png'
 import VideoSphere from '../../public/VideoSphere.png'
 import SkillExchange from '../../public/SkillExchange.png'
 import SayIt from '../../public/SayIt.png'
+import Polling from '../../public/Polling.png'
+import Repairium from '../../public/Repairium.png'
 import Architecture from '../../public/Architecture.png'
 import Cards from './Cards'
 
@@ -66,9 +66,25 @@ const Projects = () => {
             title: 'SkillExchange',
             desc: 'A skill exchange platform connecting learners and teachers with real-time chat and intelligent matching.',
             image: SkillExchange,
-            tags: ['MERN Stack', 'Chat'],
+            tags: ['MERN Stack', 'Chat', 'Collaboration'],
             live: 'https://skill-exchange-mu.vercel.app/',
             github: 'https://github.com/Yug2op/SkillExchange',
+        },
+        {
+            title: 'Repairium',
+            desc: 'Repairium is a full-stack platform designed to bridge the gap between household appliance issues and professional solutions.',
+            image: Repairium,
+            tags: ['MERN Stack', 'Apliance Repair'],
+            live: 'https://repairium.vercel.app/',
+            github: 'https://github.com/Yug2op/Repairium',
+        },
+        {
+            title: 'Polling System',
+            desc: 'A modern real-time polling application featuring interactive dashboards for teachers and students.',
+            image: Polling,
+            tags: ['Socket.io', 'MERN Stack', 'Real-time'],
+            live: 'https://polling-system-sand.vercel.app/',
+            github: 'https://github.com/Yug2op/Polling-System',
         },
         {
             title: 'SayIt',

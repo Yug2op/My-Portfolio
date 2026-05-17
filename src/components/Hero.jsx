@@ -79,7 +79,7 @@ const Hero = () => {
             </h1>
 
             <p className='text-sm text-gray-400 leading-relaxed max-w-sm'>
-              A passionate web developer with expertise in React and modern web technologies. I love creating beautiful, functional websites that solve real-world problems.
+              A passionate Full-Stack developer with expertise in React, Node and modern web technologies. I love creating beautiful, functional websites that solve real-world problems.
             </p>
 
             {/* CTA + Socials */}
@@ -115,12 +115,12 @@ const Hero = () => {
             {/* Stat row */}
             <div className='flex items-center gap-6 pt-2 border-t border-gray-600/50'>
               <div>
-                <p className='text-xl font-bold text-white'>8<span className='text-red-500'>+</span></p>
+                <p className='text-xl font-bold text-white'>10<span className='text-red-500'>+</span></p>
                 <p className='text-[12px] text-gray-500 font-mono tracking-wide'>Projects</p>
               </div>
               <div className='w-px h-8 bg-gray-600' />
               <div>
-                <p className='text-xl font-bold text-white'>MERN<span className='text-red-500'>+</span></p>
+                <p className='text-xl font-bold text-white'>MERN <span className='text-red-500'>-</span></p>
                 <p className='text-[12px] text-gray-500 font-mono tracking-wide'>Stack</p>
               </div>
               <div className='w-px h-8 bg-gray-600' />
